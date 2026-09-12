@@ -29,104 +29,104 @@ using namespace stan::math;
 stan::math::profile_map profiles__;
 static constexpr std::array<const char*, 81> locations_array__ =
   {" (found before start of program)",
-  " (in 'barcode', line 39, column 2 to column 19)",
-  " (in 'barcode', line 40, column 2 to column 25)",
-  " (in 'barcode', line 41, column 2 to column 27)",
-  " (in 'barcode', line 42, column 2 to column 30)",
-  " (in 'barcode', line 43, column 2 to column 14)",
-  " (in 'barcode', line 44, column 2 to column 17)",
-  " (in 'barcode', line 45, column 2 to column 20)",
-  " (in 'barcode', line 46, column 2 to column 30)",
-  " (in 'barcode', line 47, column 2 to column 24)",
-  " (in 'barcode', line 50, column 2 to column 22)",
-  " (in 'barcode', line 51, column 2 to column 22)",
-  " (in 'barcode', line 77, column 2 to column 18)",
-  " (in 'barcode', line 78, column 2 to column 18)",
-  " (in 'barcode', line 53, column 4 to column 43)",
-  " (in 'barcode', line 54, column 4 to column 34)",
-  " (in 'barcode', line 52, column 17 to line 55, column 3)",
-  " (in 'barcode', line 52, column 2 to line 55, column 3)",
-  " (in 'barcode', line 81, column 4 to column 67)",
-  " (in 'barcode', line 82, column 4 to column 66)",
-  " (in 'barcode', line 80, column 17 to line 83, column 3)",
-  " (in 'barcode', line 80, column 2 to line 83, column 3)",
-  " (in 'barcode', line 59, column 2 to column 48)",
-  " (in 'barcode', line 60, column 2 to column 57)",
-  " (in 'barcode', line 61, column 2 to column 29)",
-  " (in 'barcode', line 62, column 2 to column 19)",
-  " (in 'barcode', line 63, column 2 to column 25)",
-  " (in 'barcode', line 64, column 2 to column 22)",
-  " (in 'barcode', line 67, column 6 to column 35)",
-  " (in 'barcode', line 68, column 6 to column 37)",
-  " (in 'barcode', line 66, column 19 to line 69, column 5)",
-  " (in 'barcode', line 66, column 4 to line 69, column 5)",
-  " (in 'barcode', line 70, column 4 to column 54)",
-  " (in 'barcode', line 65, column 17 to line 71, column 3)",
-  " (in 'barcode', line 65, column 2 to line 71, column 3)",
-  " (in 'barcode', line 73, column 4 to column 48)",
-  " (in 'barcode', line 72, column 17 to line 74, column 3)",
-  " (in 'barcode', line 72, column 2 to line 74, column 3)",
-  " (in 'barcode', line 17, column 2 to column 17)",
+  " (in 'barcode', line 40, column 2 to column 19)",
+  " (in 'barcode', line 41, column 2 to column 25)",
+  " (in 'barcode', line 42, column 2 to column 27)",
+  " (in 'barcode', line 43, column 2 to column 30)",
+  " (in 'barcode', line 44, column 2 to column 14)",
+  " (in 'barcode', line 45, column 2 to column 17)",
+  " (in 'barcode', line 46, column 2 to column 20)",
+  " (in 'barcode', line 47, column 2 to column 30)",
+  " (in 'barcode', line 48, column 2 to column 24)",
+  " (in 'barcode', line 51, column 2 to column 28)",
+  " (in 'barcode', line 52, column 2 to column 28)",
+  " (in 'barcode', line 78, column 2 to column 24)",
+  " (in 'barcode', line 79, column 2 to column 24)",
+  " (in 'barcode', line 54, column 4 to column 43)",
+  " (in 'barcode', line 55, column 4 to column 34)",
+  " (in 'barcode', line 53, column 17 to line 56, column 3)",
+  " (in 'barcode', line 53, column 2 to line 56, column 3)",
+  " (in 'barcode', line 82, column 4 to column 55)",
+  " (in 'barcode', line 83, column 4 to column 54)",
+  " (in 'barcode', line 81, column 17 to line 84, column 3)",
+  " (in 'barcode', line 81, column 2 to line 84, column 3)",
+  " (in 'barcode', line 60, column 2 to column 48)",
+  " (in 'barcode', line 61, column 2 to column 57)",
+  " (in 'barcode', line 62, column 2 to column 29)",
+  " (in 'barcode', line 63, column 2 to column 19)",
+  " (in 'barcode', line 64, column 2 to column 25)",
+  " (in 'barcode', line 65, column 2 to column 22)",
+  " (in 'barcode', line 68, column 6 to column 35)",
+  " (in 'barcode', line 69, column 6 to column 37)",
+  " (in 'barcode', line 67, column 19 to line 70, column 5)",
+  " (in 'barcode', line 67, column 4 to line 70, column 5)",
+  " (in 'barcode', line 71, column 4 to column 54)",
+  " (in 'barcode', line 66, column 17 to line 72, column 3)",
+  " (in 'barcode', line 66, column 2 to line 72, column 3)",
+  " (in 'barcode', line 74, column 4 to column 36)",
+  " (in 'barcode', line 73, column 17 to line 75, column 3)",
+  " (in 'barcode', line 73, column 2 to line 75, column 3)",
   " (in 'barcode', line 18, column 2 to column 17)",
-  " (in 'barcode', line 19, column 9 to column 10)",
-  " (in 'barcode', line 19, column 11 to column 12)",
-  " (in 'barcode', line 19, column 2 to column 14)",
-  " (in 'barcode', line 20, column 2 to column 17)",
-  " (in 'barcode', line 21, column 30 to column 31)",
-  " (in 'barcode', line 21, column 2 to column 33)",
-  " (in 'barcode', line 23, column 2 to column 25)",
-  " (in 'barcode', line 24, column 2 to column 23)",
-  " (in 'barcode', line 25, column 2 to column 28)",
-  " (in 'barcode', line 26, column 2 to column 26)",
-  " (in 'barcode', line 29, column 2 to column 28)",
+  " (in 'barcode', line 19, column 2 to column 17)",
+  " (in 'barcode', line 20, column 8 to column 9)",
+  " (in 'barcode', line 20, column 11 to column 12)",
+  " (in 'barcode', line 20, column 2 to column 20)",
+  " (in 'barcode', line 21, column 2 to column 17)",
+  " (in 'barcode', line 22, column 8 to column 9)",
+  " (in 'barcode', line 22, column 2 to column 39)",
+  " (in 'barcode', line 24, column 2 to column 25)",
+  " (in 'barcode', line 25, column 2 to column 23)",
+  " (in 'barcode', line 26, column 2 to column 28)",
+  " (in 'barcode', line 27, column 2 to column 26)",
   " (in 'barcode', line 30, column 2 to column 28)",
-  " (in 'barcode', line 31, column 2 to column 31)",
-  " (in 'barcode', line 32, column 2 to column 32)",
-  " (in 'barcode', line 33, column 2 to column 71)",
-  " (in 'barcode', line 34, column 2 to column 63)",
-  " (in 'barcode', line 35, column 2 to column 83)",
-  " (in 'barcode', line 36, column 2 to column 75)",
-  " (in 'barcode', line 39, column 9 to column 10)",
-  " (in 'barcode', line 39, column 11 to column 12)",
-  " (in 'barcode', line 40, column 20 to column 21)",
+  " (in 'barcode', line 31, column 2 to column 28)",
+  " (in 'barcode', line 32, column 2 to column 31)",
+  " (in 'barcode', line 33, column 2 to column 32)",
+  " (in 'barcode', line 34, column 2 to column 71)",
+  " (in 'barcode', line 35, column 2 to column 63)",
+  " (in 'barcode', line 36, column 2 to column 83)",
+  " (in 'barcode', line 37, column 2 to column 75)",
+  " (in 'barcode', line 40, column 9 to column 10)",
+  " (in 'barcode', line 40, column 11 to column 12)",
   " (in 'barcode', line 41, column 20 to column 21)",
   " (in 'barcode', line 42, column 20 to column 21)",
-  " (in 'barcode', line 43, column 9 to column 10)",
+  " (in 'barcode', line 43, column 20 to column 21)",
   " (in 'barcode', line 44, column 9 to column 10)",
-  " (in 'barcode', line 44, column 11 to column 12)",
-  " (in 'barcode', line 46, column 18 to column 19)",
-  " (in 'barcode', line 46, column 21 to column 22)",
+  " (in 'barcode', line 45, column 9 to column 10)",
+  " (in 'barcode', line 45, column 11 to column 12)",
   " (in 'barcode', line 47, column 18 to column 19)",
-  " (in 'barcode', line 50, column 19 to column 20)",
-  " (in 'barcode', line 50, column 10 to column 11)",
+  " (in 'barcode', line 47, column 21 to column 22)",
+  " (in 'barcode', line 48, column 18 to column 19)",
+  " (in 'barcode', line 51, column 8 to column 9)",
   " (in 'barcode', line 51, column 19 to column 20)",
-  " (in 'barcode', line 51, column 9 to column 10)",
-  " (in 'barcode', line 77, column 12 to column 13)",
-  " (in 'barcode', line 77, column 15 to column 16)",
-  " (in 'barcode', line 78, column 15 to column 16)",
-  " (in 'barcode', line 6, column 4 to column 33)",
-  " (in 'barcode', line 7, column 4 to line 8, column 65)",
-  " (in 'barcode', line 5, column 57 to line 9, column 3)",
-  " (in 'barcode', line 11, column 4 to column 52)",
-  " (in 'barcode', line 10, column 55 to line 12, column 3)"};
+  " (in 'barcode', line 52, column 8 to column 9)",
+  " (in 'barcode', line 52, column 18 to column 19)",
+  " (in 'barcode', line 78, column 8 to column 9)",
+  " (in 'barcode', line 78, column 11 to column 12)",
+  " (in 'barcode', line 79, column 8 to column 9)",
+  " (in 'barcode', line 7, column 4 to column 33)",
+  " (in 'barcode', line 8, column 4 to line 9, column 65)",
+  " (in 'barcode', line 6, column 51 to line 10, column 3)",
+  " (in 'barcode', line 12, column 4 to column 52)",
+  " (in 'barcode', line 11, column 49 to line 13, column 3)"};
 template <bool propto__, typename T1__,
           stan::require_all_t<stan::is_col_vector<T1__>,
                               stan::is_vt_not_complex<T1__>>* = nullptr>
 stan::promote_args_t<stan::base_type_t<T1__>>
-dirichlet_multinomial_lpmf(const std::vector<int>& y, const T1__&
-                           alpha_arg__, std::ostream* pstream__);
+barmix_dm_lpmf(const std::vector<int>& y, const T1__& alpha_arg__,
+               std::ostream* pstream__);
 template <typename T0__, typename RNG,
           stan::require_all_t<stan::is_col_vector<T0__>,
                               stan::is_vt_not_complex<T0__>>* = nullptr>
 std::vector<int>
-dirichlet_multinomial_rng(const T0__& alpha_arg__, const int& N, RNG&
-                          base_rng__, std::ostream* pstream__);
+barmix_dm_rng(const T0__& alpha_arg__, const int& N, RNG& base_rng__,
+              std::ostream* pstream__);
 template <bool propto__, typename T1__,
           stan::require_all_t<stan::is_col_vector<T1__>,
                               stan::is_vt_not_complex<T1__>>*>
 stan::promote_args_t<stan::base_type_t<T1__>>
-dirichlet_multinomial_lpmf(const std::vector<int>& y, const T1__&
-                           alpha_arg__, std::ostream* pstream__) {
+barmix_dm_lpmf(const std::vector<int>& y, const T1__& alpha_arg__,
+               std::ostream* pstream__) {
   using local_scalar_t__ = stan::promote_args_t<stan::base_type_t<T1__>>;
   int current_statement__ = 0;
   const auto& alpha = stan::math::to_ref(alpha_arg__);
@@ -152,8 +152,8 @@ template <typename T0__, typename RNG,
           stan::require_all_t<stan::is_col_vector<T0__>,
                               stan::is_vt_not_complex<T0__>>*>
 std::vector<int>
-dirichlet_multinomial_rng(const T0__& alpha_arg__, const int& N, RNG&
-                          base_rng__, std::ostream* pstream__) {
+barmix_dm_rng(const T0__& alpha_arg__, const int& N, RNG& base_rng__,
+              std::ostream* pstream__) {
   using local_scalar_t__ = stan::promote_args_t<stan::base_type_t<T0__>>;
   int current_statement__ = 0;
   const auto& alpha = stan::math::to_ref(alpha_arg__);
@@ -526,7 +526,7 @@ public:
         current_statement__ = 37;
         for (int j = 1; j <= n; ++j) {
           current_statement__ = 35;
-          lp_accum__.add(dirichlet_multinomial_lpmf<propto__>(
+          lp_accum__.add(barmix_dm_lpmf<propto__>(
                            stan::model::rvalue(y, "y",
                              stan::model::index_uni(j)),
                            stan::math::elt_multiply(S,
@@ -686,7 +686,7 @@ public:
       for (int j = 1; j <= n; ++j) {
         current_statement__ = 18;
         stan::model::assign(y_rep,
-          dirichlet_multinomial_rng(
+          barmix_dm_rng(
             stan::math::elt_multiply(S,
               stan::model::rvalue(theta, "theta", stan::model::index_uni(j))),
             stan::math::sum(
@@ -695,7 +695,7 @@ public:
           stan::model::index_uni(j));
         current_statement__ = 19;
         stan::model::assign(log_lik,
-          dirichlet_multinomial_lpmf<false>(
+          barmix_dm_lpmf<false>(
             stan::model::rvalue(y, "y", stan::model::index_uni(j)),
             stan::math::elt_multiply(S,
               stan::model::rvalue(theta, "theta", stan::model::index_uni(j))),

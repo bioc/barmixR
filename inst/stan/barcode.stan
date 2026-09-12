@@ -1,15 +1,16 @@
 // -----------------------------------------------------
 // define dirichlet_multinomial for likelihood estimation
+// (named barmix_dm to avoid clashing with the Stan >= 2.34 built-in)
 // -----------------------------------------------------
 functions {
 
-  real dirichlet_multinomial_lpmf(int[] y, vector alpha) {
+  real barmix_dm_lpmf(array[] int y, vector alpha) {
     real alpha_plus = sum(alpha);
     return lgamma(alpha_plus) + sum(lgamma(alpha + to_vector(y)))
                 - lgamma(alpha_plus+sum(y)) - sum(lgamma(alpha));
   }
 
-  int[] dirichlet_multinomial_rng(vector alpha, int N) {
+  array[] int barmix_dm_rng(vector alpha, int N) {
     return multinomial_rng(dirichlet_rng(alpha), N);
   }
 
@@ -20,9 +21,9 @@ functions {
 data {
   int<lower=0> n; // Number of observations (pools or tumor)
   int<lower=0> C; // cell lines * (replicate of each cell line) >> for example 8*3
-  int y [n,C]; // observed cell counts
+  array[n, C] int y; // observed cell counts
   int<lower=1> K;                   // Number of groups (number of treatments)
-  int<lower=1, upper=K> group[n];    // Group assignment for each observation
+  array[n] int<lower=1, upper=K> group;    // Group assignment for each observation
 
   // Optional hyperparameters for psi and varphi priors
   real<lower=0> psi_mean; // Mean of psi's lognormal prior
@@ -56,8 +57,8 @@ parameters {
 }
 
 transformed parameters {
-  simplex[C] theta[n];
-  vector[C] x_beta[n];
+  array[n] simplex[C] theta;
+  array[n] vector[C] x_beta;
 
   for (j in 1:n) {
     x_beta[j] = to_vector(beta[group[j],]);
@@ -83,17 +84,17 @@ model {
   }
 
   for (j in 1:n) {
-    y[j] ~ dirichlet_multinomial(S .* theta[j]);
+    y[j] ~ barmix_dm(S .* theta[j]);
   }
 }
 
 generated quantities {
-  int y_rep[n, C];
-  real log_lik[n];
+  array[n, C] int y_rep;
+  array[n] real log_lik;
 
   // Simulations
   for (j in 1:n) {
-    y_rep[j] = dirichlet_multinomial_rng(S .* theta[j], sum(y[j]));
-    log_lik[j] = dirichlet_multinomial_lpmf(y[j] | S .* theta[j]);
+    y_rep[j] = barmix_dm_rng(S .* theta[j], sum(y[j]));
+    log_lik[j] = barmix_dm_lpmf(y[j] | S .* theta[j]);
   }
 }

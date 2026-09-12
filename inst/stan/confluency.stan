@@ -2,7 +2,7 @@ data {
   int<lower=0> n;                 // Number of observations
   vector[n] V;                    // Confluency variable (response variable)
   int<lower=1> K;                 // Number of groups (treatments)
-  int<lower=1, upper=K> group[n]; // Group assignment for each observation
+  array[n] int<lower=1, upper=K> group; // Group assignment for each observation
 }
 
 parameters {
